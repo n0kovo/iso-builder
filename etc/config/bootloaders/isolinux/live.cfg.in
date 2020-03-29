@@ -1,11 +1,11 @@
 prompt 0
 
 MENU HIDDEN
-MENU AUTOBOOT Booting cinnamon remix live disk in # seconds
+MENU AUTOBOOT Booting ubuntudde live disk in # seconds
 timeout 50
 
 label live-@FLAVOUR@
-	menu label ^Try or install cinnamon remix
+	menu label ^Try or install ubuntudde
 	menu default
 	linux /casper/vmlinuz
 	initrd /casper/initrd.lz
