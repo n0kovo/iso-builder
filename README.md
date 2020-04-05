@@ -40,7 +40,7 @@ The following example uses Docker and assumes you have Docker correctly installe
     
     cd /home/cinnamonremix
     
-    git clone https://github.com/ubuntubudgie/iso-builder -b cinnamonv2
+    git clone https://github.com/UbuntuDDE/iso-builder -b ubuntudde
     
     cd iso-builder
     
