@@ -36,9 +36,9 @@ The following example uses Docker and assumes you have Docker correctly installe
 
     Clone the iso-builder
 
-    mkdir /home/cinnamonremix
+    mkdir /home/ubuntudde
     
-    cd /home/cinnamonremix
+    cd /home/ubuntudde
     
     git clone https://github.com/UbuntuDDE/iso-builder -b ubuntudde
     
@@ -72,7 +72,7 @@ The following example uses Docker and assumes you have Docker correctly installe
     
     You will now be back in the container i.e. with a /# prompt
 
-    cd /home/cinnamonremix/iso-builder
+    cd /home/ubuntudde/iso-builder
 
     ./terraform.sh
     
@@ -82,7 +82,7 @@ The following example uses Docker and assumes you have Docker correctly installe
 
     On your host, copy the build folder from your docker container
 
-    sudo docker cp containerID:/home/cinnamonremix/iso-builder/builds/amd64 .
+    sudo docker cp containerID:/home/ubuntudde/iso-builder/builds/amd64 .
 
     Finish by shutting down the container
 
