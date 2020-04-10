@@ -22,17 +22,13 @@ The following example uses Docker and assumes you have Docker correctly installe
 
     Now install debootstrap package and create an eoan (or focal script)
 
-    apt update && apt install debootstrap -y
+    apt update && apt install debootstrap git nano -y
 
     cd /usr/share/debootstrap/scripts
 
     cp disco eoan
     
     cd
-
-    Install git and nano
-
-    apt install git nano -y
 
     Clone the iso-builder
 
