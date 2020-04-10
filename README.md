@@ -29,7 +29,8 @@ The following example uses Docker and assumes you have Docker correctly installe
     Clone the iso-builder
 
     mkdir /home/ubuntudde; cd /home/ubuntudde; git clone https://github.com/UbuntuDDE/iso-builder -b ubuntudde; cd iso-builder; ./build.sh
-    at this point configure etc/terraform.conf for the build you wish to make e.g. 20.04 and focal - ensure you decide between unstable or all PPAs
+    
+at this point configure etc/terraform.conf for the build you wish to make e.g. 20.04 and focal - ensure you decide between unstable or all PPAs
 
 
     This will eventually complete - ignore any errors EXCEPT for 404 repository errors.  If you get those then investigate why and once fixed exit and start the instructions again.  This step will take 20-60 minutes depending on your internet speed and host OS CPU power
