@@ -35,31 +35,25 @@ at this point configure etc/terraform.conf for the build you wish to make e.g. 2
 
     This will eventually complete - ignore any errors EXCEPT for 404 repository errors.  If you get those then investigate why and once fixed exit and start the instructions again.  This step will take 20-60 minutes depending on your internet speed and host OS CPU power
 
-    exit the container and commit the results
+exit the container and commit the results
 
     exit
     
-    You will now be back on your host OS
+You will now be back on your host O
     
-    sudo docker commit containerID 
+    containerID=$(sudo docker ps -l -q)
+    sudo docker commit $containerID ;  sudo docker stop $containerID;sudo docker start -i $containerID
     
-    e.g.   sudo docker commit ea5126f14ac9
+    
+e.g.   sudo docker commit ea5126f14ac9
 
-    Stop the docker container (important step)
-
-    sudo docker stop ea5126f14ac9
-
-
+Stop the docker container (important step)
 
  3) Run the build by starting a container:
-
-    sudo docker start -i ea5126f14ac9
     
     You will now be back in the container i.e. with a /# prompt
 
-    cd /home/ubuntudde/iso-builder
-
-    ./terraform.sh
+    cd /home/ubuntudde/iso-builder; ./terraform.sh
     
     This will take approx 20-60 minutes but will depend on your host OS CPU power and internet speed
 
