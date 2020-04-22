@@ -22,59 +22,38 @@ The following example uses Docker and assumes you have Docker correctly installe
 
     Now install debootstrap package and create an eoan (or focal script)
 
-    apt update && apt install debootstrap -y
+    apt update && apt install debootstrap git nano -y
 
-    cd /usr/share/debootstrap/scripts
-
-    cp disco eoan
+    cd /usr/share/debootstrap/scripts; cp disco focal; cd ;
     
-    cd
-
-    Install git and nano
-
-    apt install git nano -y
-
     Clone the iso-builder
 
-    mkdir /home/ubuntudde
+    mkdir /home/ubuntudde; cd /home/ubuntudde; git clone https://github.com/UbuntuDDE/iso-builder -b ubuntudde; cd iso-builder; ./build.sh
     
-    cd /home/ubuntudde
-    
-    git clone https://github.com/UbuntuDDE/iso-builder -b ubuntudde
-    
-    cd iso-builder
-    
-    at this point configure etc/terraform.conf for the build you wish to make e.g. 20.04 and focal - ensure you decide between unstable or all PPAs
+at this point configure etc/terraform.conf for the build you wish to make e.g. 20.04 and focal - ensure you decide between unstable or all PPAs
 
-    ./build.sh
 
     This will eventually complete - ignore any errors EXCEPT for 404 repository errors.  If you get those then investigate why and once fixed exit and start the instructions again.  This step will take 20-60 minutes depending on your internet speed and host OS CPU power
 
-    exit the container and commit the results
+exit the container and commit the results
 
     exit
     
-    You will now be back on your host OS
+You will now be back on your host O
     
-    sudo docker commit containerID 
+    containerID=$(sudo docker ps -l -q)
+    sudo docker commit $containerID ;  sudo docker stop $containerID;sudo docker start -i $containerID
     
-    e.g.   sudo docker commit ea5126f14ac9
+    
+e.g.   sudo docker commit ea5126f14ac9
 
-    Stop the docker container (important step)
-
-    sudo docker stop ea5126f14ac9
-
-
+Stop the docker container (important step)
 
  3) Run the build by starting a container:
-
-    sudo docker start -i ea5126f14ac9
     
     You will now be back in the container i.e. with a /# prompt
 
-    cd /home/ubuntudde/iso-builder
-
-    ./terraform.sh
+    cd /home/ubuntudde/iso-builder; ./terraform.sh
     
     This will take approx 20-60 minutes but will depend on your host OS CPU power and internet speed
 
