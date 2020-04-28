@@ -1,6 +1,6 @@
 prompt 0
 
-MENU HIDDEN
+
 MENU AUTOBOOT Booting ubuntudde live disk in # seconds
 timeout 50
 DEFAULT live-@FLAVOUR@
