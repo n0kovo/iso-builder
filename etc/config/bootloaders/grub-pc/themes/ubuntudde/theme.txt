@@ -1,5 +1,7 @@
-# GRUB2 gfxmenu Linux theme
+# GRUB2 gfxmenu Vimix Grub theme
 # Designed for any resolution
+# theme by vinceliuice
+# Source : https://github.com/vinceliuice/grub2-themes
 
 # Global Property
 title-text: ""
