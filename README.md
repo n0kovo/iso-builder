@@ -28,7 +28,7 @@ The following example uses Docker and assumes you have Docker correctly installe
     
     Clone the iso-builder
 
-    mkdir /home/ubuntudde; cd /home/ubuntudde; git clone https://github.com/UbuntuDDE/iso-builder -b ubuntudde; cd iso-builder; ./build.sh
+    mkdir /home/ubuntudde; cd /home/ubuntudde; git clone https://github.com/UbuntuDDE/iso-builder -b focal; cd iso-builder; ./build.sh
     
 at this point configure etc/terraform.conf for the build you wish to make e.g. 20.04 and focal - ensure you decide between unstable or all PPAs
 
