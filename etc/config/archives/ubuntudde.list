@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/openarun/dde-dev/ubuntu @BASECODENAME main
-# deb-src http://ppa.launchpad.net/openarun/dde-dev/ubuntu @BASECODENAME main
+deb http://ppa.launchpad.net/ubuntudde-dev/stable/ubuntu @BASECODENAME main
+# deb-src http://ppa.launchpad.net/ubuntudde-dev/stable/ubuntu @BASECODENAME main

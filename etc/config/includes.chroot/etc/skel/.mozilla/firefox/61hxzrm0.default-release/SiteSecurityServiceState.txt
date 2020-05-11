@@ -1,0 +1,6 @@
+www.google-analytics.com:HSTS	0	18380	1598954490852,1,1,2
+www.googletagmanager.com:HSTS	0	18380	1619604089729,1,1,2
+incoming.telemetry.mozilla.org:HSTS	0	18380	1603836084579,1,0,2
+stats.g.doubleclick.net:HSTS	0	18380	1598954491933,1,1,2
+fonts.googleapis.com:HSTS	0	18380	1619604089720,1,0,2
+ubuntudde.com:HSTS	0	18380	1603836090793,1,0,2
