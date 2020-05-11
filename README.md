@@ -8,13 +8,13 @@ As UbuntuDDE is built with the Debian version of live-build, not the Ubuntu patc
 
 The following example uses Docker and assumes you have Docker correctly installed and set up:
 
-    Clone this project & cd into it:
+Clone this project & cd into it:
 
     git clone https://github.com/UbuntuDDE/iso-builder && cd iso-builder
 
-    Configure the channel in the etc/terraform.conf (unstable, stable).
+Configure the channel in the etc/terraform.conf (unstable, stable).
 
-    Run the build:
+Run the build:
 
     docker run --privileged -i -v /proc:/proc \
         -v ${PWD}:/working_dir \
@@ -22,7 +22,7 @@ The following example uses Docker and assumes you have Docker correctly installe
         debian:latest \
         /bin/bash -s etc/terraform.conf < build.sh
 
-    When done, your image will be in the builds folder.
+When done, your image will be in the builds folder.
 
 
 
