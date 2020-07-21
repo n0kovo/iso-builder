@@ -12,4 +12,4 @@ apt-ftparchive \
 -o "APT::FTPArchive::Release::Version=$VERSION" release "dists/$CODENAME" \
 > dists/focal/Release
 
-gpg --batch --yes --digest-algo sha512 --sign --detach-sign -u 0x65A0FEF800E0F671DA40A0AD0CCCDBF527989837 --armor -o "dists/$CODENAME/Release.gpg" "dists/$CODENAME/Release"
+# gpg --batch --yes --digest-algo sha512 --sign --detach-sign -u 0x65A0FEF800E0F671DA40A0AD0CCCDBF527989837 --armor -o "dists/$CODENAME/Release.gpg" "dists/$CODENAME/Release"
