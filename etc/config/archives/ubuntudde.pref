@@ -1,0 +1,4 @@
+Package: *
+Pin: release o=P-PPA-ubuntudde-dev-stable,a=groovy
+Pin: origin ppa.launchpad.net
+Pin-Priority:600
