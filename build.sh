@@ -25,9 +25,8 @@ echo -e "
 
 apt-get update
 apt-get install -y live-build patch binutils zstd
-dpkg -i ./debs/ubuntu-keyring_2020.06.17.1-1_all.deb
-dpkg -i ./debs/debootstrap_1.0.124_all.deb
-#patch /usr/lib/live/build/binary_grub-efi < live-build-fix-shim-remove.patch
+dpkg -i ./debs/*.deb
+patch /usr/lib/live/build/binary_grub-efi < live-build-fix-shim-remove.patch
 
 ln -sfn /usr/share/debootstrap/scripts/gutsy /usr/share/debootstrap/scripts/impish
 
