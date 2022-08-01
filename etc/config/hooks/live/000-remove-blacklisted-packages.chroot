@@ -25,4 +25,8 @@ cp /etc/rc.local /etc/rc.local.orig
 sed -i "s/exit 0/rm -fR \/var\/lib\/apt\/lists\/*/" /etc/rc.local
 sed -i 's/OnlyShowIn=GNOME;Unity;/#OnlyShowIn=GNOME;Unity;/g' /usr/share/applications/gnome-session-properties.desktop
 echo "mv /etc/rc.local.orig /etc/rc.local" >> /etc/rc.local
+rm -rf /usr/share/applications/calamares.desktop
+sed -i "s/enabled=.*/enabled=0/g" /etc/default/apport
+sed -i 's/vt_handoff="1"/vt_handoff="0"/g' /etc/grub.d/10_linux
+sed -i 's/vt_handoff="1"/vt_handoff="0"/g' /etc/grub.d/10_linux_zfs
 echo "exit 0" >> /etc/rc.local
