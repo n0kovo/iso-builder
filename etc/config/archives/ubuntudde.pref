@@ -1,4 +1,4 @@
 Package: *
-Pin: release o=P-PPA-ubuntudde-dev-stable,a=impish
+Pin: release o=P-PPA-ubuntudde-dev-stable,a=lunar
 Pin: origin ppa.launchpad.net
 Pin-Priority:600
