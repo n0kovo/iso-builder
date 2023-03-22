@@ -28,7 +28,7 @@ apt-get install -y live-build patch binutils zstd
 dpkg -i ./debs/*.deb
 patch /usr/lib/live/build/binary_grub-efi < live-build-fix-shim-remove.patch
 
-ln -sfn /usr/share/debootstrap/scripts/gutsy /usr/share/debootstrap/scripts/lunar
+ln -sfn /usr/share/debootstrap/scripts/gutsy /usr/share/debootstrap/scripts/impish
 
 build () {
   BUILD_ARCH="$1"
